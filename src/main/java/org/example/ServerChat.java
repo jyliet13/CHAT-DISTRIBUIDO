@@ -44,8 +44,8 @@ public class ServerChat {
             ChatRoom room = new ChatRoom(ID, password);
             chatRooms.put(ID, room);
             out.writeUTF("Sala creada: " + ID);
-        }
     }
+ }
 
     public synchronized void joinRoom(String roomName,  String password, Conexion clientConnection,  DataOutputStream out) throws IOException {
         ChatRoom room = null;
